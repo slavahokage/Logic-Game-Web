@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Игра!</title>
+		<link href="style.css"  rel="stylesheet">
+	</head>
+	<body>
+		<div>
+			<h1>Угадайка!</h1>
+			<h2 id="score">Ваш счет: </h2>
+			<h2 id="attempts">Число ваших попыток: </h2>
+			<h2 id="leftAttempts">У вас осталось попыток: </h2>
+			<h2  id="left">Осталось: 36</h2>
+			<div class="radioGroup">
+				<input  id="easy" class="radio"  name="r" type="radio"><b class="radioT"> легкий</b></input>
+				<input   id="mid" class="radio" name="r" type="radio"><b class="radioT"> средний</b></input>
+				<input  id="hard" class="radio"  name="r" type="radio"><b class="radioT"> тяжелый</b></input>
+				<input  class="go" OnClick="startGame(this)" type="submit" value="Начать игру!"/>
+				<br>
+			</div>	
+		</div>
+			
+		<main>
+			<table class="main1">
+				<tr>
+					<td id="0_0" OnClick="change(this)"><div id="00" class="visibilityOfText "></div></td>
+					<td id="0_1" OnClick="change(this)"><div id="01" class="visibilityOfText "></div></td>
+					<td id="0_2" OnClick="change(this)"><div id="02" class="visibilityOfText "></div></td>
+					<td id="0_3" OnClick="change(this)"><div id="03" class="visibilityOfText "></div></td>
+					<td id="0_4" OnClick="change(this)"><div id="04" class="visibilityOfText "></div></td>
+					<td id="0_5" OnClick="change(this)"><div id="05" class="visibilityOfText "></div></td>
+				</tr>
+				<tr>
+					<td id="1_0" OnClick="change(this)"><div id="10" class="visibilityOfText "></div></td>
+					<td id="1_1" OnClick="change(this)"><div id="11" class="visibilityOfText "></div></td>
+					<td id="1_2" OnClick="change(this)"><div id="12" class="visibilityOfText "></div></td>
+					<td id="1_3" OnClick="change(this)"><div id="13" class="visibilityOfText "></div></td>
+					<td id="1_4" OnClick="change(this)"><div id="14" class="visibilityOfText "></div></td>
+					<td id="1_5" OnClick="change(this)"><div id="15" class="visibilityOfText "></div></td>
+				</tr>
+				<tr>
+					<td id="2_0"  OnClick="change(this)"><div id="20" class="visibilityOfText "></div></td>
+					<td id="2_1"  OnClick="change(this)"><div id="21" class="visibilityOfText "></div></td>
+					<td id="2_2"  OnClick="change(this)"><div id="22" class="visibilityOfText "></div></td>
+					<td id="2_3"  OnClick="change(this)"><div id="23" class="visibilityOfText "></div></td>
+					<td id="2_4"  OnClick="change(this)"><div id="24" class="visibilityOfText "></div></td>
+					<td id="2_5"  OnClick="change(this)"><div id="25" class="visibilityOfText "></div></td>
+				</tr>
+				<tr>
+					<td id="3_0"  OnClick="change(this)"><div id="30" class="visibilityOfText "></div></td>
+					<td id="3_1"  OnClick="change(this)"><div id="31" class="visibilityOfText "></div></td>
+					<td id="3_2"  OnClick="change(this)"><div id="32" class="visibilityOfText "></div></td>
+					<td id="3_3"  OnClick="change(this)"><div id="33" class="visibilityOfText "></div></td>
+					<td id="3_4"  OnClick="change(this)"><div id="34" class="visibilityOfText "></div></td>
+					<td id="3_5"  OnClick="change(this)"><div id="35" class="visibilityOfText "></div></td>
+				</tr>
+				<tr>
+					<td id="4_0"  OnClick="change(this)"><div id="40" class="visibilityOfText "></div></td>
+					<td id="4_1"  OnClick="change(this)"><div id="41" class="visibilityOfText "></div></td>
+					<td id="4_2"  OnClick="change(this)"><div id="42" class="visibilityOfText "></div></td>
+					<td id="4_3"  OnClick="change(this)"><div id="43" class="visibilityOfText "></div></td>
+					<td id="4_4"  OnClick="change(this)"><div id="44" class="visibilityOfText "></div>
+					</td>
+					<td id="4_5"  OnClick="change(this)"><div id="45" class="visibilityOfText "></div></td>
+				</tr>
+				<tr>
+					<td id="5_0"  OnClick="change(this)"><div id="50" class="visibilityOfText "></div></td>
+					<td id="5_1"  OnClick="change(this)"><div id="51" class="visibilityOfText "></div></td>
+					<td id="5_2"  OnClick="change(this)"><div id="52" class="visibilityOfText "></div></td>
+					<td id="5_3"  OnClick="change(this)"><div id="53" class="visibilityOfText "></div></td>
+					<td id="5_4"  OnClick="change(this)"><div id="54" class="visibilityOfText "></div></td>
+					<td id="5_5"  OnClick="change(this)"><div id="55" class="visibilityOfText "></div></td>
+				</tr>
+			</table>
+		</main>
+		<script src="script.js"></script>
+	</body>
+</html>
+
